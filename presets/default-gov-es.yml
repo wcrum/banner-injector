@@ -1,0 +1,19 @@
+theme:
+  background-color: "#f0f0f0"
+  text-color: black
+
+header:
+  text: Un sitio oficial del Gobierno de Estados Unidos
+  font-size: .74rem
+  icon: us_flag_small.png
+
+content:
+  font-size: .94rem
+  left:
+    text:
+      <strong>Los sitios web oficiales usan .gov</strong><br>
+      Un sitio web .gov pertenece a una organización oficial del Gobierno de Estados Unidos.
+  right:
+    text:
+      <strong>Secure .gov websites use HTTPS</strong><br>
+      Un candado (&#128274;) o https:// significa que usted se conectó de forma segura a un sitio web .gov. Comparta información sensible sólo en sitios web oficiales y seguros.
