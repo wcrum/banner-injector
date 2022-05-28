@@ -5,6 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="banner-injector-wcrum-test",
+    url="https://github.com/elisoncrum/Banner-Injector",
     version="0.0.2",
     author="William Crum",
     author_email="me@wcrum.dev",
@@ -20,10 +21,9 @@ setuptools.setup(
     python_requires=">=3.6",
     entry_points={
         'console_scripts': [
-            'bannerinjector = banner_injector:cli',
+            'bannerinjector = banner_injector:main',
         ],
     },
-    include_package_data=True,
     install_requires=[
         'Click',
     ],

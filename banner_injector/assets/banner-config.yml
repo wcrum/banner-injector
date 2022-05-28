@@ -1,0 +1,19 @@
+theme:
+  background-color: "#f0f0f0"
+  text-color: black
+
+header:
+  text: An official website of the United States government
+  font-size: .74rem
+  icon: us_flag_small.png
+
+content:
+  font-size: .94rem
+  left:
+    text:
+      <strong>Official websites use .gov</strong><br>
+      A .gov website belongs to an official government organization in the United States. 
+  right:
+    text:
+      <strong>Secure .gov websites use HTTPS</strong><br>
+      A lock (&#128274;) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.

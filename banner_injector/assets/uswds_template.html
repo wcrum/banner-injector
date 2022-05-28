@@ -47,16 +47,16 @@
     .banner__outer {
         justify-content: center;
         display: flex;
-        background-color: {{ themes["background-color"] }};
+        background-color: {{ theme["background-color"] }};
     }
     .banner-header {
         padding: 0px 16px;
         display: flex;
-        color: {{ themes["text-color"]  }};
+        color: {{ theme["text-color"]  }};
         font-size: {{ header["font-size"]}};
     }
     .banner-header a {
-        color: {{ themes["text-color"] }};
+        color: {{ theme["text-color"] }};
     }
     .banner-header img {
         object-fit: contain;
@@ -68,18 +68,17 @@
         padding: 1em;
     }
     .banner-content img {
-        width: 3em;
+        width: {{ content["image-size"] }};
         -webkit-transition: none;
         transition: none;
     }
     .banner-content__text {
         font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-        color: {{ themes["text-color"] }};
+        color: {{ theme["text-color"] }};
         font-size: {{ content["font-size"] }};
         width: 80%;
     }
     .banner-content__logo {
-        padding: 1rem;
-        padding-left: 2rem;
+        margin: 1rem;
     }
 </style>
