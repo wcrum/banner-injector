@@ -14,14 +14,14 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: MIT License",
         "Operating System :: OS Independent",
     ],
     packages=setuptools.find_packages(),
     python_requires=">=3.6",
     entry_points={
         'console_scripts': [
-            'bannerinjector = banner_injector:main',
+            'bannerinjector = src:main',
         ],
     },
     install_requires=[
