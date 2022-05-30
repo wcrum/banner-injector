@@ -11,10 +11,10 @@ def main():
     pass
 
 @main.command()
-@click.option('--config', default="banner-config.yml", help='Specify Configuration File')
+@click.option('--config', '-c', default="banner-config.yml", help='Specify Configuration File')
 @click.option('--recursive/--not-recursive', help='Disabled Recursive Search', default=True)
 @click.argument('path', type=click.Path(exists=True))
-def inject(path, *args, **kwgs):
+def uswds(path, *args, **kwgs):
     """Injects Banner in Specified Path"""
 
     with open(kwgs["config"]) as conf:
