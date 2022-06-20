@@ -25,7 +25,16 @@ setuptools.setup(
         ],
     },
     install_requires=[
+        'beautifulsoup4',
         'Click',
+        'Jinja2',
+        'PyYAML'
+    ],
+    setup_requires=[
+        'beautifulsoup4',
+        'Click',
+        'Jinja2',
+        'PyYAML'
     ],
     package_data={'': ['assets/*']},
 )
