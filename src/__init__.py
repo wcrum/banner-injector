@@ -41,7 +41,7 @@ def uswds(path, *args, **kwgs):
     # add all file absolute file paths
     for f in files:
         click.echo(f)
-        absoulte_files.append("{}\\{}".format(searching_path, f))
+        absoulte_files.append("{}/{}".format(searching_path, f))
 
     click.echo(click.style('WARNING! You are about to modify {} files.'.format(len(files)), fg='red'))
     click.confirm('Do you want to continue?', abort=True)
