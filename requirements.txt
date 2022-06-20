@@ -1,5 +1,5 @@
 beautifulsoup4==4.11.1
 Click==7.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 PyYAML==6.0
 setuptools==45.2.0
