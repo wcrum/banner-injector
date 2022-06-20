@@ -1,13 +1,13 @@
 <div class="banner__outer">
     <div class="banner__inner" style="width: 80%">
         <header class="banner-header">
-            <img class="banner-icon" src="/{{ header['icon'] }}" alt="U.S. flag">
+            <img class="banner-icon" src="{{ base_url }}/{{ header['icon'] }}" alt="U.S. flag">
             <div>{{ header["text"] }}</div>
             <a href="#" onclick="toggleContent()" class="classification-header__link">Here's how you know...</a>
         </header>
         <div class="banner-content" style="display: none;">
             <div style="width: 50%; float:left;">
-                <img class="banner-content__logo" src="/icon-dot-gov.svg" role="img" alt="" align="left"
+                <img class="banner-content__logo" src="{{ base_url }}/icon-dot-gov.svg" role="img" alt="" align="left"
                     aria-hidden="true">
                 <div class="banner-content__text">
                     <p>
@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div style="align-items: center; width: 50%; float:right;">
-                <img class="banner-content__logo" src="/icon-https.svg" role="img" alt="" align="left"
+                <img class="banner-content__logo" src="{{ base_url }}/icon-https.svg" role="img" alt="" align="left"
                     aria-hidden="true">
                 <div class="banner-content__text">
                     <p>
