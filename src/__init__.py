@@ -13,6 +13,7 @@ def main():
 @main.command()
 @click.option('--config', '-c', default="banner-config.yml", help='Specify Configuration File')
 @click.option('--recursive/--not-recursive', help='Disabled Recursive Search', default=True)
+@click.option('--force', '-f', help='Force Modification', is_flag=True, default=False)
 @click.argument('path', type=click.Path(exists=True))
 def uswds(path, *args, **kwgs):
     """Injects Banner in Specified Path"""
@@ -43,8 +44,9 @@ def uswds(path, *args, **kwgs):
         click.echo(f)
         absoulte_files.append("{}/{}".format(searching_path, f))
 
-    click.echo(click.style('WARNING! You are about to modify {} files.'.format(len(files)), fg='red'))
-    click.confirm('Do you want to continue?', abort=True)
+    if not kwgs['force']:
+        click.echo(click.style('WARNING! You are about to modify {} files.'.format(len(files)), fg='red'))
+        click.confirm('Do you want to continue?', abort=True)
 
     for f in absoulte_files:
         with open(f, "r", encoding='latin-1') as _html:
