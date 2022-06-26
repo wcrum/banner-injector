@@ -49,7 +49,7 @@ def uswds(path, *args, **kwgs):
         click.confirm('Do you want to continue?', abort=True)
 
     for f in absoulte_files:
-        with open(f, "r", encoding='latin-1') as _html:
+        with open(f, "r", encoding='utf-8') as _html:
             soup = BeautifulSoup(_html, "html.parser")
             try:
                 soup.body.insert(
